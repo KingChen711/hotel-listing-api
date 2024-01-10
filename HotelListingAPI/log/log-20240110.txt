@@ -1,0 +1,25 @@
+2024-01-10 23:03:52.739 +07:00 [INF] Now listening on: https://localhost:7142
+2024-01-10 23:03:52.771 +07:00 [INF] Now listening on: http://localhost:5196
+2024-01-10 23:03:52.773 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-10 23:03:52.774 +07:00 [INF] Hosting environment: Development
+2024-01-10 23:03:52.774 +07:00 [INF] Content root path: D:\code\tech\C#\Courses\UltimateASPDotNetCore\HotelListingAPI\HotelListingAPI
+2024-01-10 23:07:14.635 +07:00 [INF] Now listening on: https://localhost:7142
+2024-01-10 23:07:14.785 +07:00 [INF] Now listening on: http://localhost:5196
+2024-01-10 23:07:14.788 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-10 23:07:14.789 +07:00 [INF] Hosting environment: Development
+2024-01-10 23:07:14.791 +07:00 [INF] Content root path: D:\code\tech\C#\Courses\UltimateASPDotNetCore\HotelListingAPI\HotelListingAPI
+2024-01-10 23:08:56.311 +07:00 [INF] Now listening on: https://localhost:7142
+2024-01-10 23:08:56.354 +07:00 [INF] Now listening on: http://localhost:5196
+2024-01-10 23:08:56.356 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-10 23:08:56.358 +07:00 [INF] Hosting environment: Development
+2024-01-10 23:08:56.359 +07:00 [INF] Content root path: D:\code\tech\C#\Courses\UltimateASPDotNetCore\HotelListingAPI\HotelListingAPI
+2024-01-10 23:09:37.422 +07:00 [INF] Now listening on: https://localhost:7142
+2024-01-10 23:09:37.455 +07:00 [INF] Now listening on: http://localhost:5196
+2024-01-10 23:09:37.457 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-10 23:09:37.458 +07:00 [INF] Hosting environment: Development
+2024-01-10 23:09:37.459 +07:00 [INF] Content root path: D:\code\tech\C#\Courses\UltimateASPDotNetCore\HotelListingAPI\HotelListingAPI
+2024-01-10 23:24:03.079 +07:00 [INF] Now listening on: https://localhost:7142
+2024-01-10 23:24:03.112 +07:00 [INF] Now listening on: http://localhost:5196
+2024-01-10 23:24:03.114 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-10 23:24:03.116 +07:00 [INF] Hosting environment: Development
+2024-01-10 23:24:03.116 +07:00 [INF] Content root path: D:\code\tech\C#\Courses\UltimateASPDotNetCore\HotelListingAPI\HotelListingAPI
