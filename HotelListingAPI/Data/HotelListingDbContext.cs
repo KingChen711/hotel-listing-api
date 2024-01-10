@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using HotelListingAPI.Data;
 
 namespace HotelListingAPI.Data
 {
@@ -62,5 +63,6 @@ namespace HotelListingAPI.Data
                 }
             );
         }
+        public DbSet<HotelListingAPI.Data.Country> Country { get; set; } = default!;
     }
 }
