@@ -1,5 +1,0 @@
-2024-01-11 00:11:50.834 +07:00 [INF] Now listening on: https://localhost:7142
-2024-01-11 00:11:50.871 +07:00 [INF] Now listening on: http://localhost:5196
-2024-01-11 00:11:50.874 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2024-01-11 00:11:50.875 +07:00 [INF] Hosting environment: Development
-2024-01-11 00:11:50.876 +07:00 [INF] Content root path: D:\code\tech\C#\Courses\UltimateASPDotNetCore\HotelListingAPI\HotelListingAPI
