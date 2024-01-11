@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using HotelListingAPI.Data;
 
 namespace HotelListingAPI.Data
 {
@@ -11,7 +10,7 @@ namespace HotelListingAPI.Data
         }
 
         public DbSet<Hotel> Hotels { get; set; }
-        public DbSet<Hotel> Countries { get; set; }
+        public DbSet<Country> Countries { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
