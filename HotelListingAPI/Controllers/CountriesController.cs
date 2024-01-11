@@ -2,6 +2,7 @@
 using HotelListingAPI.Contracts;
 using HotelListingAPI.Data;
 using HotelListingAPI.Dtos.Country;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +21,6 @@ namespace HotelListingAPI.Controllers
             _countryRepository = countryRepository;
         }
 
-        // GET: api/Countries
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
@@ -29,7 +29,6 @@ namespace HotelListingAPI.Controllers
             return Ok(records);
         }
 
-        // GET: api/Countries/5
         [HttpGet("{id}")]
         public async Task<ActionResult<GetCountryDetailDto>> GetCountry(int id)
         {
@@ -45,9 +44,8 @@ namespace HotelListingAPI.Controllers
             return Ok(record);
         }
 
-        // PUT: api/Countries/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryDto country)
         {
             if (id != country.Id)
@@ -83,15 +81,16 @@ namespace HotelListingAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Country>> PostCountry(CreateCountryDto country)
+        [Authorize(Roles = "Administrator")]
+        public async Task<ActionResult<GetCountryDto>> PostCountry(CreateCountryDto country)
         {
             var newCountry = _mapper.Map<Country>(country);
-
-            return await _countryRepository.AddAsync(newCountry);
+            var insertedCountry = await _countryRepository.AddAsync(newCountry);
+            return _mapper.Map<GetCountryDto>(insertedCountry);
         }
 
-        // DELETE: api/Countries/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteCountry(int id)
         {
             var country = await _countryRepository.GetByIdAsync(id);
