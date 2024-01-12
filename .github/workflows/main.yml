@@ -1,0 +1,29 @@
+name: Publish 🚀
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      -main
+    
+jobs:
+  publish:
+    runs-on: unbuntu-latest
+
+    steps:
+      - uses: action/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore ./HotelListingAPI.sln
+
+      - name: Build
+        run: dotnet build ./HotelListingAPI.sln --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish ./HotelListingAPI.sln --configuration Release --no-build
+      
